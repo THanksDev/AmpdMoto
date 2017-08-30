@@ -1,0 +1,327 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: lightgray; 
+}
+
+/* Universal *****************/
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dark {
+	padding: 15px;
+	background: gray;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* Header *****************/
+
+
+header {
+	background: gray;
+	color: white;
+	padding: 0;
+	min-height: 60px;
+	border-bottom: darkorange 5px solid;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #logo {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+header #logo img {
+	margin: 0;
+	padding: 0;
+	width: 150px;
+}
+
+header nav {
+	float: right;
+	margin-top: 50px;
+}
+
+header .current a {
+	color: darkorange;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: darkgray;
+	font-weight: bold;
+}
+
+
+/* Showcase *****************/
+
+
+
+#showcase {
+	min-height: 400px;
+	background: url('./images/showcase.jpg') no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+#showcase h1 {
+	margin: 0;
+	padding: 10px;
+	font-size: 60px;
+	font-weight: bold;
+	color: darkorange;
+	text-shadow: black 3px 3px;
+	border: white;
+	border-radius: 10px;
+}
+
+#showcase p {
+	padding: 10px;
+	background: gray;
+	font-weight: bold;
+	border: white 3px solid;
+	border-radius: 20px;
+}
+
+/* Banner *****************/
+
+
+#banner {
+	min-height: 80px;
+	background: url('./images/gears.jpg') no-repeat center center;
+	text-align: center;
+	color: white;
+	border-top: darkorange 3px solid;
+	border-bottom: darkorange 3px solid;
+}
+
+#banner li {
+	float: left;
+	display: inline;
+	text-align: center;
+	width: 30%;
+	padding: 0px 10px 0 10px;
+	font-size: 40px;
+}
+
+
+/* Boxes *****************/
+
+
+#boxes {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#boxes .box {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#boxes .box img {
+	width: 180px;
+	margin: 0;
+	padding: 0;
+	border: white 3px solid;
+}
+
+#boxes .box h3 {
+	color: darkorange;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	background: gray;
+	border-radius: 0 10px 0 10px;
+}
+
+#boxes .box p {
+	color: white;
+	font-weight: bold;
+}
+
+
+
+/* Footer *****************/
+
+
+#main {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#main article {
+	float: left;
+	width: 60%;
+}
+
+#main article h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+#main article p {
+	text-indent: 25px;
+	line-height: 1.5;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+#main form {
+	width: 60%;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#main form input {
+	width: 200px;
+	height: 25px;
+	border: black 3px solid;
+	border-radius: 5px;
+}
+
+#main form button {
+	width: 75px;
+	height: 25px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background: darkorange;
+	text-transform: uppercase;
+}
+
+#main aside {
+	float: right;
+	width: 30%;
+	text-align: center;
+}
+
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li {
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+#sidebar img {
+	width: 60%;
+	border: black 3px solid;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar h3 {
+	text-transform: uppercase;
+	color: darkorange;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Footer *****************/
+
+
+footer {
+	text-align: center;
+	background: gray;
+	color: white;
+	padding: 5px;
+	clear: both;
+}
+
+
+/* Media Queries *****************/
+
+
+@media(max-width: 768px) {
+	header li,
+	header #logo,
+	header nav,
+	#boxes .box,
+	#boxes .box img,
+	#banner,
+	#banner li,
+	#main aside,
+	#main article,
+	#sidebar,
+	#main form {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	#banner li {
+		text-transform: uppercase;
+	}
+
+	header nav {
+		margin: 0;
+	}
+
+	header a {
+		font-size: 18px;
+	}
+
+	#boxes .box img {
+		border: none;
+	}
+
+	#sidebar {
+		padding: 5px 0 5px 0;
+	}
+
+	#main article p {
+		color: white;
+		line-height: 1.5;
+		font-weight: bold;
+		padding: 5px;
+		background: gray;
+	}
+
+	#main article h3 {
+		padding: 5px 0 0 0;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+
+	#main form {
+		margin-top: 10px;
+	}
+}
+
+
