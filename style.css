@@ -242,7 +242,7 @@ header a:hover {
 #sidebar img {
 	width: 60%;
 	border: black 3px solid;
-	border-radius: 5px;
+	border-radius: 45px;
 	margin: 0;
 	padding: 0;
 }
