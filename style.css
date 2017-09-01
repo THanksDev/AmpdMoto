@@ -113,6 +113,14 @@ header a:hover {
 	border-radius: 20px;
 }
 
+#showcase p ul {
+	list-style: none;
+}
+
+#showcase p ul li {
+	display: inline;
+}
+
 /* Banner *****************/
 
 
