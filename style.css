@@ -60,9 +60,10 @@ header #logo {
 }
 
 header #logo img {
-	margin: 0;
+	margin-top: 30px;
 	padding: 0;
-	width: 150px;
+	width: 250px;
+	height: 50px;
 }
 
 header nav {
@@ -86,7 +87,7 @@ header a:hover {
 
 
 #showcase {
-	min-height: 400px;
+	min-height: 300px;
 	background: url('./images/backdrop.jpg') no-repeat center center;
 	background-size: cover;
 	text-align: center;
@@ -153,6 +154,11 @@ header a:hover {
 	padding: 10px;
 }
 
+#boxes .box a {
+	text-decoration: none;
+}
+
+
 #boxes .box img {
 	width: 180px;
 	margin: 0;
@@ -170,10 +176,48 @@ header a:hover {
 }
 
 #boxes .box p {
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 
+
+/* Social Media Links (Contact Page) *****************/
+
+
+#socialmedia {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#socialmedia .social {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+#socialmedia .social img {
+	width: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+.follow {
+	text-align: center;
+ 	text-align: center;
+ 	font-size: 30px;
+ 	font-weight: bold;
+	padding-bottom: 40px;
+ 	border-bottom: black 3px solid;
+ }
+
+#email {
+	text-align: center;
+}
+
+.mail {
+	width: 160px;
+}
 
 
 /* Footer *****************/
@@ -192,15 +236,17 @@ header a:hover {
 
 #main article h3 {
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 900;
 }
 
 #main article p {
+	padding: 5px;
+	border-radius: 5px;
 	text-indent: 25px;
 	line-height: 1.5;
 	font-size: 22px;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 #main form {
@@ -243,11 +289,11 @@ header a:hover {
 }
 
 #sidebar img {
+	margin: 0;
+	padding: 3px;
 	width: 60%;
 	border: black 3px solid;
 	border-radius: 20px;
-	margin: 0;
-	padding: 0;
 }
 
 #sidebar h3 {
@@ -283,7 +329,8 @@ footer {
 	#main aside,
 	#main article,
 	#sidebar,
-	#main form {
+	#main form,
+	#socialmedia .social {
 		float: none;
 		text-align: center;
 		width: 100%;
@@ -329,6 +376,10 @@ footer {
 
 	#showcase p {
 		font-size: 25px;
+	}
+
+	#showcase {
+		min-height: 250px;
 	}
 }
 
